@@ -1,0 +1,21 @@
+<label>Course Name: {{Name}}</label><br>
+<label>Course Overview:{{Overview}}</label><br>
+<label>Course Deadline:{{Deadline}}</label><br>
+
+<table class="table table-bordered" *ngIf="Learners.length > 0">
+    <thead class="table-success">
+      <tr>
+        
+        <th scope="col">Learner Name</th>
+        
+         </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of Learners; let i = index">
+        
+        <td>{{ employee }}</td>
+
+        
+      </tr>
+    </tbody>
+  </table>
